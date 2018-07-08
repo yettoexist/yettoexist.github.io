@@ -17,7 +17,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=3859423148" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=302266928" id="pagesheet"/>
     <!--HTML Widget code-->
   
 		<style>
@@ -209,14 +209,10 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
  </head>
  <body>
 
-  <div class="clearfix borderbox" id="page"><!-- column -->
-   <div class="clearfix colelem" id="u104-7"><!-- content -->
-    <p id="u104-2">Yet to Exist</p>
-    <p id="u104-3">&nbsp;</p>
-    <p id="u104-5">Under construction</p>
-   </div>
-   <div class="size_fluid_width colelem" id="u137" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
-    
+  <div class="clearfix borderbox" id="page"><!-- group -->
+   <div class="browser_width grpelem" id="u137-bw">
+    <div class="size_browser_width" id="u137"><!-- custom html -->
+     
 <div class="loader">
   <div class="loader__bar"></div>
   <div class="loader__bar loader__bar--delay-1"></div>
@@ -227,8 +223,16 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <div>
 </div>
 
+    </div>
    </div>
-   <div class="verticalspacer" data-offset-top="327" data-content-above-spacer="327" data-content-below-spacer="173" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+   <div class="browser_width grpelem" id="u104-7-bw">
+    <div class="clearfix" id="u104-7"><!-- content -->
+     <p id="u104-2">Yet to Exist</p>
+     <p id="u104-3">&nbsp;</p>
+     <p id="u104-5">Under construction</p>
+    </div>
+   </div>
+   <div class="verticalspacer" data-offset-top="1001" data-content-above-spacer="1001" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
   </div>
   <!-- JS includes -->
   <script type="text/javascript">
@@ -252,6 +256,8 @@ var muse_init=function(){require.config({baseUrl:""});require(["jquery","museuti
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
 Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
 Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.showWidgetsWhenReady();/* body */
