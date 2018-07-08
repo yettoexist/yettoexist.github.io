@@ -1,7 +1,10 @@
-<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="yettoexist.com" resolutions="1x" timestamp="1531054070985">
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="yettoexist.com" resolutions="1x" timestamp="1531093851048">
+  <folder name="assets">
+    <file name="loading-style-background.mulib" crc="54244447" seo="true" mt="1531093649000"/>
+  </folder>
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="448567697" ref="index"/>
+    <file name="index.css" crc="3859423148" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
@@ -11,5 +14,5 @@
     <file name="jquery.watch.js" crc="51536988" ref="index"/>
     <file name="require.js" crc="7928878" ref="index"/>
   </folder>
-  <file name="index.html" crc="238009105" seo="true" mt="1531054035247" redirect="true"/>
+  <file name="index.html" crc="3772576425" seo="true" mt="1531093827265" redirect="true"/>
 </manifest>
